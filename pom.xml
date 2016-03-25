@@ -7,11 +7,13 @@
 
 
 	<dependencies>
+		<!-- Not tested == Not done. -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
 		</dependency>
+		<!-- Put some logs, for when there will be an issue. There will be one.  -->
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
