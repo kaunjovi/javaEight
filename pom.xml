@@ -13,11 +13,22 @@
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
 		</dependency>
-		<!-- Put some logs, for when there will be an issue. There will be one.  -->
+		<!-- Put some logs, for when there will be an issue. There will be one. -->
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
 			<version>1.1.5</version>
+		</dependency>
+		<!-- Some serious shit going on here -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.12.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kohsuke.metainf-services</groupId>
+			<artifactId>metainf-services</artifactId>
+			<version>1.7</version>
 		</dependency>
 	</dependencies>
 
@@ -31,6 +42,8 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+					<!-- Disable annotation processing for ourselves. -->
+					<compilerArgument>-proc:none</compilerArgument>
 				</configuration>
 			</plugin>
 		</plugins>
