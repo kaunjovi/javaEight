@@ -13,6 +13,7 @@ public class TestLambda {
 
 	// This is just a wrapper. We don't know at the moment what is the exact
 	// logic in the execute() method.
+	// checking
 	interface ILambdaWrapper {
 		int execute(int a, int b);
 	}
